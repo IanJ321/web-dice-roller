@@ -1,0 +1,47 @@
+<!--
+    The code in this file came from the ChatGPT prompt we used to complete the assignment in class. 
+    The values in each class have been modified from the original to make the project more unique.
+    Modifications I made include:
+    - Changing bold text in the instructions to include quotes using <q>
+    - Added a break in the instructions to group lines by sentences
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dice Roller</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="rollDice()">
+    <div class="container">
+        <h1>Dice Roller</h1>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>
+                Click <q>Roll Dice</q> to roll the dice.
+                <br>
+                You can also press <q>Enter</q> to roll again.
+            </p>
+        </div>
+        <div class="diceArea">
+            <div class="diceField">
+                <label for="firstRoll">Roll 1</label>
+                <input type="text" id="firstRoll" readonly>
+            </div>
+            <div class="diceField">
+                <label for="secondRoll">Roll 2</label>
+                <input type="text" id="secondRoll" readonly>
+            </div>
+            <div class="diceField">
+                <label for="total">Total</label>
+                <input type="text" id="total" readonly>
+            </div>
+        </div>
+        <button id="rollButton" autofocus onclick="rollDice()">
+            Roll Dice
+        </button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

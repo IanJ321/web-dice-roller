@@ -1,0 +1,105 @@
+/* 
+    The code in this file came from the ChatGPT prompt we used to complete the assignment in class. 
+    The values in each class have been modified from the original to make the project more unique.
+    Modifications I made include:
+    - Removed border radius, so all boxes on the webpage have sharp corners 
+    - Changed colors: 
+        - Background is black
+        - Button (including :hover and :focus) are green
+    - Adjusted most values to be divisible by 4 rather than 5:
+        - Ex: padding 16px
+        - Ex: margin-bottom 24px
+    - Changed dice roll boxes to be square by setting grid-template-columns to 50px
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background: #111;
+}
+
+.container {
+    width: 420px;
+    padding: 32px;
+    text-align: center;
+    color: white;
+    background: #333;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.instructions {
+    margin-bottom: 24px;
+    padding: 16px;
+    background-color: #444;
+}
+
+.instructions h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.instructions p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.diceArea {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.diceField {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    align-items: center;
+    gap: 16px;
+}
+
+.diceField label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.diceField input {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #999;
+    background: #eaeaea;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background: #90ee90;
+    color: black;
+}
+
+button:hover {
+    background: #76c776;
+}
+
+button:focus {
+    outline: 4px solid #b8f5b8;
+    outline-offset: 2px;
+}
